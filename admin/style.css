@@ -1,0 +1,56 @@
+body{
+    background: url("image/home.jpg");
+    min-height: 120vh;
+}
+.forma  {
+    margin: 5px;
+    padding: 10px 30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+}
+.myImg {
+    cursor:zoom-in;
+}
+.popup {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+.popup_bg {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    position:fixed;
+    z-index:1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+.popup_img {
+    position: fixed;
+    margin-top: 30px;
+    z-index:2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 80%;
+}
+.popup_img {
+    pointer-events: none;
+}
